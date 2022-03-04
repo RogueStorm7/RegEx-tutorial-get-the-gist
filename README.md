@@ -41,21 +41,32 @@ If these symbols are missing there will not be a match.
 Breaking down the string will help us better understand it.
 We will call them *groups*. We are only looking at the *beginning* and *end* right now. 
 
+In this *group* it contains: a-z, 0-9 an underscore, hyphen or a period.
 `^([a-z0-9_\.-]+)`   at the __beginning__ is the `^` .
 
-`.([a-z\.]{2,6})$`  at the __end__ of this group we see the  `$`.
+In this *group* it contains:
+`.([a-z\.]{2,6})$`  at the __end__ of this group we see the `$`.
 
-This is the first *group* it contains: a-z, 0-9 an underscore, hyphen or a period. 
 These are the parameters to get a match. **NOTE** the period (also known as an *escape character* at the end) must have a backward slash to be a match.
 
+We will get to the **middle** _group_ shortly.
 ### Quantifiers
 In order for there to be a match. 
 The *Qualifiers* indicate how many times a specific character or group thereof is present. An example would be `abc+`.
 In the string there will be a match as long as there is `ab` but has to have a **minimum** of one `c` to get that match. If not there is no match. **NOTE** the `+` means one of these characters **must** be included to match.
 ### OR Operator
+The `#` has to be present and identifies a matching hex code.
+**NOTE** this is not the string for an email match. We will get back to that for now... 
 
-### Character Classes
+Take a look at this code: `/^#?([a-f0-9]{6}|[a-f0-9]{3})$/`
 
+ Breaking this down: `/^#?([a-f0-9]{6}`. We see the `#` comes first. The `a-f`, `0-9`,`{6}` means a match will include a `6` character string; containing `a-f` alphabets and `0-9` numerics. **NOTE** I left the brackets out of the example to help you see the details I was explaining they must be included in order to match. 
+ 
+ In this string of code it is saying find the above named example 6 characters that include: the `#`, `a-f`, and `0-9`. **OR**
+
+ The `|` is a symbol that signifies **OR** (a boolean value) match this `[a-f0-9]{3})$/`. A string of 3 characters that include:`a-f`, and `0-9`.
+ ### Character Classes
+Back to the original 
 ### Flags
 
 ### Grouping and Capturing
