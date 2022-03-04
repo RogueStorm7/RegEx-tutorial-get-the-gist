@@ -39,16 +39,19 @@ In the Matching Email code the **Anchor** is the regular expressions beginning a
 Which indicates to the computer to search for something that looks like those two symbols, and **must** be included to find the match. 
 If these symbols are missing there will not be a match.
 Breaking down the string will help us better understand it.
-We will call them *groups*.
+We will call them *groups*. We are only looking at the *beginning* and *end* right now. 
 
 `^([a-z0-9_\.-]+)`   at the __beginning__ is the `^` .
 
 `.([a-z\.]{2,6})$`  at the __end__ of this group we see the  `$`.
 
-This is the first *group* it contains a-z,0-9 an underscore, hyphen or a period. These are the parameters to get a match. **NOTE** the period (also known as an *escape character* at the end) must have a backward slash "\" in or to be a match.
+This is the first *group* it contains: a-z, 0-9 an underscore, hyphen or a period. 
+These are the parameters to get a match. **NOTE** the period (also known as an *escape character* at the end) must have a backward slash to be a match.
 
 ### Quantifiers
-
+In order for there to be a match. 
+The *Qualifiers* indicate how many times a specific character or group thereof is present. An example would be `abc+`.
+In the string there will be a match as long as there is `ab` but has to have a **minimum** of one `c` to get that match. If not there is no match. **NOTE** the `+` means one of these characters **must** be included to match.
 ### OR Operator
 
 ### Character Classes
