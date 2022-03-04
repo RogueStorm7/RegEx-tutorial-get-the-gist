@@ -6,10 +6,13 @@ The objective of this tutorial is to explain a specific regex of *matching a sim
 To begin we must first understand what RegEx is.
 Putting it plainly, it stands for *regular expression* it is a tool commonly used as a search pattern for matching one or more character's in string data. 
 There are a series of symbols and characters that are used and we will dive into those throughout the tutorial. Below you will find the code I will be referring to.
-
-Matching Email-
+ 
+String of a matching email. The average person never sees an email written like this.
 
 `/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/`
+
+Usually, it is written as the example below:
+- "mynameis@gmail.com" or "contactme@yahoo.com"
 
 
 ## Table of Contents
@@ -38,9 +41,9 @@ If these symbols are missing there will not be a match.
 Breaking down the string will help us better understand it.
 We will call them *groups*.
 
-`^([a-z0-9_\.-]+)`   at the __beginning__ is the '^'.
+`^([a-z0-9_\.-]+)`   at the __beginning__ is the `^` .
 
-`.([a-z\.]{2,6})$`  at the __end__ of this group we see the '$'.
+`.([a-z\.]{2,6})$`  at the __end__ of this group we see the  `$`.
 
 This is the first *group* it contains a-z,0-9 an underscore, hyphen or a period. These are the parameters to get a match. **NOTE** the period (also known as an *escape character* at the end) must have a backward slash "\" in or to be a match.
 
@@ -65,7 +68,9 @@ This is the first *group* it contains a-z,0-9 an underscore, hyphen or a period.
 ### Look-ahead and Look-behind
 
 ## Author
-
-This has been a interesting process to understand RegEx.
+My name is, Mianta McKnight, and I created this tutorial. 
+It has been a interesting process to understand RegEx.
 I hope it was helpful.
-Here is a link to my GitHub profile[RogueStorm](git@github.com:RogueStorm7/RegEx-tutorial-get-the-gist.git)
+Here is a link to my GitHub profile @ [RogueStorm](git@github.com:RogueStorm7/RegEx-tutorial-get-the-gist.git)
+
+
