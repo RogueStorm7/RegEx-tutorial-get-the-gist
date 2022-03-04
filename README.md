@@ -104,7 +104,7 @@ This once again is not applicable to the email match code. But we can get an und
 ## Author
 My name is, Mianta McKnight, and I created this tutorial. 
 It has been a interesting process to understand RegEx.
-I hope it was helpful.
-Here is a link to my GitHub profile @ [RogueStorm](git@github.com:RogueStorm7/RegEx-tutorial-get-the-gist.git)
+I hope it was helpful and that you got the gist.
+Here is a link to my GitHub profile: [RogueStorm](git@github.com:RogueStorm7/RegEx-tutorial-get-the-gist.git)
 
 
