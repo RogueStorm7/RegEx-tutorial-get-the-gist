@@ -66,7 +66,8 @@ Take a look at this code: `/^#?([a-f0-9]{6}|[a-f0-9]{3})$/`
 
  The `|` is a symbol that signifies **OR** (a boolean value) match this `[a-f0-9]{3})$/`. A string of 3 characters that include:`a-f`, and `0-9`.
  ### Character Classes
-Back to the original 
+Back to the original email code string: `/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/`. As promised we are now going to examine the **middle** _group_ `@([\da-z\.-]+)`.
+Lets begin with the `\d` since is is right before the `a-z` it signifies a single alphabet character that it will seek to match **after** the `@` symbol in the email address. No numerics or special characters are allowed or no match will be met.  
 ### Flags
 
 ### Grouping and Capturing
