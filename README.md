@@ -78,9 +78,11 @@ Lets begin with the `\d` since is is right before the `a-z` it signifies a singl
  However this RegEx flag is **not** a part of the email code either. This is purely informational in relation to the original purpose of this tutorial. 
  
  There are several properties are part of the `/regex/`. 
- - g is defined as **global** = matching **ALL** the possibilities in the string  that will yield a match.
- - m is defined as **multiline** = _line-by-line_ search versus searching through the string in its entirety. 
- - i is defined as **insensitive** = prevents capital letters and lowercase letter from stopping a match, and relates directly to case sensitivity.
+ - g is defined as **global** = matching **ALL** the possibilities in the string  that will yield a match. Matching the beginning and end of the string. Doesn't return after initial match and starts again searching from the end of the pervious match.
+
+ - m is defined as **multiline** = _line-by-line_ search versus searching through the string in its entirety.
+   
+ - i is defined as **insensitive** = prevents capital letters and lowercase letter from stopping a match, and relates directly to case sensitivity.Would look like `/XyZ/`
 
 ### Grouping and Capturing
 In order for the code to be read in order it has to: begin at the left and move along until it reaches the end at the far right. The logical comparison would be you are reading this tutorial.
@@ -105,6 +107,6 @@ This once again is not applicable to the email match code. But we can get an und
 My name is, Mianta McKnight, and I created this tutorial. 
 It has been a interesting process to understand RegEx.
 I hope it was helpful and that you got the gist.
-Here is a link to my GitHub profile: [RogueStorm](git@github.com:RogueStorm7/RegEx-tutorial-get-the-gist.git)
+Here is a link to my GitHub profile: [RogueStorm](https://gist.github.com/RogueStorm7)
 
 
